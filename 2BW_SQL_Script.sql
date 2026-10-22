@@ -54,13 +54,23 @@ select * from fahrschueler
 where ort= 'Schorndorf'
 AND strasse='Drosselweg';
 
+/* Aufgabe 9 */
+select * from fahrschueler
+where 
+geburtsdatum<'1998-12-31' 
+AND 
+geburtsdatum>='1997-01-01';
 
+/* Aufgabe 10 */
+select * from fahrschueler
+where 
+geburtsdatum>'1998-12-31' 
+OR 
+geburtsdatum<'1997-01-01';
 
-
-
-
-
-
+/* Aufgabe 11 */
+select * From fahrschueler 
+where ort!='Schorndorf';
 
 
 
